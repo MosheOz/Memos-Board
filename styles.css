@@ -1,0 +1,112 @@
+html , body{
+    background-image: url("assets/tile.jpg");
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(assets/fonts/Runaround\ Kid\ DEMO.otf);
+}
+
+#myTytle > h1 {
+    font-family: headerFont;
+    font-size: 70px;
+    text-align: center;
+}
+
+#formImage {
+    background: url(assets/formbg.jpg);
+    height: 370px;
+    width: 800px;
+}
+
+#textForm {
+    margin-left: 175px;
+}
+
+#textareaBox{
+    border: 1px solid gray;
+    background-color: transparent;
+    width: 400px;
+    height: 200px;
+}
+
+#dateBox{
+    border: 1px solid gray;
+    background-color: transparent;
+    width: 170px;
+    border-radius: 10%;
+}
+
+#timeBox{
+    border: 1px solid gray;
+    background-color: transparent;
+    width: 200px;
+    border-radius: 10%;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+ @keyframes fadeIn {
+     from{
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+  }
+
+#displayMemo{
+    background-image: url(assets/notebg.png);
+    height: 250px;
+    width: 200px;
+    display: inline-block;
+    animation: fadeIn 2s;
+ }
+
+ #displayMemo:hover {
+    background-color: lightgray;   
+}
+
+ #displayText{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 5px;
+    padding: 10px;
+    overflow: auto;
+    height: 150px;
+    width: 170px;
+    border: solid 1px lightslategray;
+}
+
+#displayDateAndTime{
+    position: absolute;
+    padding: 10px;
+    margin-left: 5px;
+    margin-top: 170px;
+    height: 100px;
+    width: 150px;
+    z-index: 2;
+}
+#createTrashIconContainer{
+    position: absolute;
+    padding: 5px;
+    margin-left: 180px;
+    height: 100px;
+    width: 150px;
+    
+}
+
+ #trash{
+    display: none;
+}
+
+#displayMemo:hover #trash {
+    display: inline-block;    
+} 
+
+
+
+
